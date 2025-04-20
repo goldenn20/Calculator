@@ -11,7 +11,15 @@ namespace SimpleCalculator
             InitializeComponent();
         }
 
-        
-        
+        private void MultiplyClick(object sender, RoutedEventArgs e)
+        {
+            double a = double.Parse(Input1.Text);
+            double b = double.Parse(Input2.Text);
+            double c = a * b;
+            ResultText.Text = "Результат: " + c;
+        }
+
+
+
     }
 }
